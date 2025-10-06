@@ -1,0 +1,28 @@
+{
+  "name": "mardowndocumentgeneration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "deep-diff": "^1.0.2",
+    "graphql": "^16.11.0",
+    "lodash.isplainobject": "^4.0.6",
+    "minimist": "^1.2.8",
+    "node-fetch": "^2.7.0",
+    "resolve-from": "^5.0.0",
+    "tr46": "^0.0.3",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0"
+  },
+  "devDependencies": {
+    "graphql-markdown": "^7.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-docs": "npx graphql-markdown src/main/resources/graphql/schema.graphqls > docs/api.md",
+    "docs": "npm run generate-docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
